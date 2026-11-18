@@ -1,0 +1,19 @@
+{
+  "interval_seconds": 30,
+  "timeout_seconds": 5,
+  "tls_warning_days": 14,
+  "listen": "127.0.0.1:9187",
+  "targets": [
+    {
+      "id": "web-health",
+      "kind": "http",
+      "address": "https://status.example/health"
+    },
+    {
+      "id": "service-tcp",
+      "kind": "tcp",
+      "address": "service.example:443",
+      "tls": true
+    }
+  ]
+}
