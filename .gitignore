@@ -1,0 +1,22 @@
+# Build artifacts
+/bin/
+/dist/
+/coverage.out
+*.test
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+/config.json
+/config.*.json
+*.local.json
+*.secret.json
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local binary from go build
+/portwatch
